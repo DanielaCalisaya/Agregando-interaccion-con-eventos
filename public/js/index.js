@@ -53,5 +53,27 @@ window.onload = function(){
     }
     
     container.style.display = 'block';
+
+/* en clasee */
+    let $menu = document.querySelector('#menu');
+    let $logo = document.querySelector('.logoDH');
+
+    $logo.addEventListener('click', () => {
+        $menu.classList.toggle('mostrar')
+    })
+
+    $menu.addEventListener('mouseout', () => {
+        $menu.classList.remove('mostrar')
+    })
     
 } 
+
+/* function colorAlAzar(...colores){
+    let random = Math.floor((Math.random() * (5-0))+0);
+    let colorRandom = colores[random]
+    return colorRandom
+} 
+
+titulo.addEventListener('mouseover', ()=>{
+    titulo.style.color = colorAlAzar('red', 'blue', 'orange', 'brown', 'yellow'); 
+}) */
