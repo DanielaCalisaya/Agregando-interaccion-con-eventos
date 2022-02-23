@@ -1,21 +1,24 @@
 /* window.onload = function () {
+
     document.querySelector('main').style.display = 'block';
 
     let $form = document.querySelector('form');
     let $input = document.querySelector('input');
 
-    $form.addEventListener('submit', (event) => {
+    $form.addEventListener('submit', (event) => {  Capturo el nombre del evento: submit 
         event.preventDefault()
-        console.log(event.target[0].value)
+        console.log(event.target[0].value) En la posición 0 capturo el input, mas el value capturo lo que el usuario escribio | Target: objetivo
     })
+
+     $input.addEventListener('keydown', (event) => {
+        console.log('Presionaste la tecla') En consola veremos la cantidad de veces que hemos presionado una tecla
+    }) Si este console es igual al de abajo en este punto, en consola podremos saber qué letra presiona
 
     $input.addEventListener('keypress', (event) => {
         console.log('Presionaste la tecla ' + event.key)
     })
 
-} PRACTICA EN CLASE */ 
-
-
+} PRACTICA EN CLASE con un form en index.ejs*/ 
 
 
 
@@ -54,7 +57,8 @@ window.onload = function(){
     
     container.style.display = 'block';
 
-/* en clasee */
+
+    /* en clasee */
     let $menu = document.querySelector('#menu');
     let $logo = document.querySelector('.logoDH');
 
@@ -67,13 +71,3 @@ window.onload = function(){
     })
     
 } 
-
-/* function colorAlAzar(...colores){
-    let random = Math.floor((Math.random() * (5-0))+0);
-    let colorRandom = colores[random]
-    return colorRandom
-} 
-
-titulo.addEventListener('mouseover', ()=>{
-    titulo.style.color = colorAlAzar('red', 'blue', 'orange', 'brown', 'yellow'); 
-}) */
