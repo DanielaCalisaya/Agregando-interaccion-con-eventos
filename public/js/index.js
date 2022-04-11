@@ -58,7 +58,7 @@ window.onload = function(){
     container.style.display = 'block';
 
 
-    /* en clasee */
+    /* en clase */
     let $menu = document.querySelector('#menu');
     let $logo = document.querySelector('.logoDH');
 

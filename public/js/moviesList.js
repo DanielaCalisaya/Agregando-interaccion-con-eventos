@@ -4,7 +4,7 @@ window.onload = function(){
     
     let $logo = document.querySelector('#logo');  /* capturo el id */
 
-    $logo.addEventListener('mouseover', () => {  /* mouseover: mousse sobre el elemento */
+    $logo.addEventListener('mouseover', () => {  /* mouseover: mousse sobre el logo, recien ahi el fondo se oscurece y se agrega la foto */
         body.style.backgroundColor = '#7f7f7f'
         body.classList.add('fondoMoviesList');
     })
